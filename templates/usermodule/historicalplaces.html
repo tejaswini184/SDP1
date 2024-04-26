@@ -1,0 +1,37 @@
+{% extends 'navbar/usernavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body %}
+<div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="col">Column
+    <img src = "{% static 'images/hp1.jpeg' %}" alt="My image" width="290" height="200"/>
+      <h2>TAJ MAHAL</h2>
+      <p> Taj Mahal, located in Agra, India, is an iconic monument of eternal love, built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. This architectural marvel, with its pristine white marble, intricate carvings, and gemstone inlays, stands as a testament to the grandeur of Mughal architecture. ...</p>
+      <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="learn-more-btn">Learn More</a>
+    </div>
+    <div class="col">Column
+    <img src = "{% static 'images/hp2.jpg' %}" alt="My image" width="290" height="200"/>
+      <h2>AGRA FORT</h2>
+      <p>The Agra Fort (Qila Agra) is a historical fort in the city of Agra, and also known as Agra's Red Fort. Mughal emperor Humayun was crowned at this fort. It was later renovated by the Mughal emperor Akbar from 1565 and the present-day structure was completed in 1573</p>
+      <a href="https://en.wikipedia.org/wiki/Agra_Fort" class="learn-more-btn">Learn More</a></div>
+    <div class="col">Column
+    <img src = "{% static 'images/hp3.jpg' %}" alt="My image" width="290" height="200"/>
+      <h2>QUTIB MINAR</h2>
+      <p>Qutub Minar, situated in the heart of Delhi, stands as a magnificent example of Indo-Islamic Afghan architecture. With its towering height of 73 meters, it's the tallest brick minaret in the world, featuring intricate carvings and verses from the Quran.  ...</p>
+      <a href="https://en.wikipedia.org/wiki/Qutb_Minar" class="learn-more-btn">Learn More</a></div>
+    <div class="col">Column
+    <img src = "{% static 'images/hp4.jpg' %}" alt="My image" width="290" height="200"/>
+      <h2>HAWA MAHAL</h2>
+      <p>Hawa Mahal, often referred to as the "Palace of Winds," is an iconic landmark in Jaipur, Rajasthan. This five-story red and pink sandstone structure boasts 953 small windows, which allowed the royal ladies to observe daily life on the street below without being seen...</p>
+      <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" class="learn-more-btn">Learn More</a></div>
+  </div>
+</div>
+{% endblock %}
+</body>
+</html>

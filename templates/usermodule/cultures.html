@@ -1,0 +1,37 @@
+{% extends 'navbar/usernavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body %}
+<div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="col">Column
+    <img src = "{% static 'images/cul4.jpeg' %}" alt="My image" width="290" height="200"/>
+      <h2>BUDDISM</h2>
+      <p>Buddhism is an Indian religion and philosophical tradition. The Buddha ("the Awakened One") was a Śramaṇa who lived in South Asia c. 6th or 5th century BCE. Followers of Buddhism, called Buddhists in English, referred to themselves as Sakyan-s or Sakyabhiksu in ancient India. ...</p>
+      <a href="https://en.wikipedia.org/wiki/Buddhism#:~:text=Buddhism%20is%20an%20Indian%20religion,or%20Sakyabhiksu%20in%20ancient%20India." class="learn-more-btn">Learn More</a>
+    </div>
+    <div class="col">Column
+    <img src = "{% static 'images/cultures1.jpeg' %}" alt="My image" width="290" height="200"/>
+      <h2>HINDUS</h2>
+      <p>A Hindu views the entire universe as God's and everything in the universe as God. Hindus believe that each person is intrinsically divine and the purpose of life is to seek and realise the divinity within all of us. The Hindu belief is totally non-exclusive and accepts all other faiths and religious paths ...</p>
+      <a href="https://en.wikipedia.org/wiki/Hindus" class="learn-more-btn">Learn More</a></div>
+    <div class="col">Column
+    <img src = "{% static 'images/cul2.jpeg' %}" alt="My image" width="290" height="200"/>
+      <h2>MUSLIMS</h2>
+      <p>Muslims are people who adhere to Islam, a monotheistic religion belonging to the Abrahamic tradition. They consider the Quran, the foundational religious text of Islam, to be the verbatim word of the God of Abraham as it was revealed to Muhammad, the main Islamic..</p>
+      <a href="https://en.wikipedia.org/wiki/Muslims" class="learn-more-btn">Learn More</a></div>
+    <div class="col">Column
+    <img src = "{% static 'images/cul3.jpeg' %}" alt="My image" width="290" height="200"/>
+      <h2>CHRISTIANS</h2>
+      <p>Christianity is an Abrahamic monotheistic religion based on the life and teachings of Jesus. It is the world's largest and most widespread religion with roughly 2.4 billion followers, comprising around 31.2% of the world population...</p>
+      <a href="https://en.wikipedia.org/wiki/Christians" class="learn-more-btn">Learn More</a></div>
+  </div>
+</div>
+{% endblock %}
+</body>
+</html>

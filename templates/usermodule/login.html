@@ -1,0 +1,41 @@
+{% extends 'navbar/usernavbar.html' %}
+{% load static %}
+<html>
+    <head>
+        <title>
+            LOGIN
+        </title>
+
+
+
+    </head>
+    <body>
+    {% block body %}
+        {% if messages %}
+  {% for message in messages %}
+   {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+  {% endfor %}
+
+{% endif %}
+        <div class="container1">
+            <div class="bodycontainer" >
+                <div style="top:250px;  color: #333; padding: 20px 500px 20px 500px; align-text:center; display: flex; justify-content: center;
+            align-items: center;"  >
+
+                <form method="post" action="{% url 'login1' %}">
+                    {% csrf_token %}
+                    <h1>Login</h1>
+                    <label>Usename</label><br>
+                    <input type="text" name="username" placeholder="username"><br><br>
+                    <label>Password</label><br>
+                    <input type="password" name="password"><br><br>
+                    <button type="submit" name="SUBMIT">SUBMIT</button>
+
+                </form>
+            </div>
+                </div>
+        </div>
+    {% endblock %}
+    </body>
+</html>

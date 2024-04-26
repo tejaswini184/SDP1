@@ -1,0 +1,42 @@
+{% extends 'navbar/usernavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body %}
+<div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="col">Column
+    <img src = "{% static 'images/holi2.jpg' %}" alt="My image" width="290" height="200"/>
+      <h2>HOLI</h2>
+      <p>Holi is a sacred ancient tradition of Hindus, a holiday in many states of
+        India and Nepal with regional holidays in other countries. It is a cultural ...</p>
+      <a href="https://en.wikipedia.org/wiki/Holi" class="learn-more-btn">Learn More</a>
+    </div>
+    <div class="col">Column
+    <img src = "{% static 'images/diwali.jpg' %}" alt="My image" width="290" height="200"/>
+      <h2>DIWALI</h2>
+      <p>It symbolises the spiritual "victory of light over darkness, good over evil, and knowledge over ignorance"
+        Diwali is celebrated during the Hindu lunisolar ...</p>
+      <a href="https://en.wikipedia.org/wiki/Diwali" class="learn-more-btn">Learn More</a></div>
+    <div class="col">Column
+    <img src = "{% static 'images/pongal.png' %}" alt="My image" width="290" height="200"/>
+      <h2>PONGAL</h2>
+      <p>Makar Sankranti is celebrated to honour the sun god, Surya, and is associated with the harvest season.
+        It symbolises the triumph of light over darkness and the ...</p>
+      <a href="https://www.ketto.org/blog/happy-makar-sankranti" class="learn-more-btn">Learn More</a></div>
+    <div class="col">Column
+    <img src = "{% static 'images/ramzan.jpg' %}" alt="My image" width="290" height="200"/>
+      <h2>RAMADAN</h2>
+      <p>Ramadan is the ninth month of the Islamic calendar, observed by Muslims
+        worldwide as a month of fasting (sawm),
+        prayer, reflection, and community....</p>
+      <a href="https://en.wikipedia.org/wiki/Ramadan" class="learn-more-btn">Learn More</a></div>
+  </div>
+</div>
+{% endblock %}
+</body>
+</html>

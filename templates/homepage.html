@@ -1,0 +1,47 @@
+{% extends 'navbar/navbar1.html' %}
+{% load static %}
+< html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autoplay Video</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300vh;
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 9000px; /* Maximum width to maintain aspect ratio */
+    }
+
+
+    video {
+        display: block;
+        width: 100%;
+        height: full; /* Maintain aspect ratio */
+    }
+</style>
+
+</head>
+{% block body %}
+<body>
+
+    <div class="video-container">
+        <div style="text-align:center;fontsize:50%">INDIAN CULTURE MANAGEMENT SYSTEM</div>
+         <video controls  autoplay width="1425">
+
+            <source src="static/images/icmhomevideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+{% endblock %}
+</body>
+</html>

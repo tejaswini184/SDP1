@@ -1,0 +1,38 @@
+{% extends 'navbar/usernavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body %}
+<div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="col">Column
+    <img src = "{% static 'images/art1.jpeg' %}" alt="My image" width="290" height="200"/>
+      <h2>PAINTING</h2>
+      <p>painting, the expression of ideas and emotions, with the creation of certain
+        Earlier cultural traditions—of tribes, religions, guilds, royal ...</p>
+      <a href="https://en.wikipedia.org/wiki/Painting" class="learn-more-btn">Learn More</a>
+    </div>
+    <div class="col">Column
+    <img src = "{% static 'images/art2.jpg' %}" alt="My image" width="290" height="200"/>
+      <h2>DANCING</h2>
+      <p>Dance is an art form, often classified as a sport, consisting of sequences of body movements with aesthetic and often symbolic value, either improvised or purposefully selected. ...</p>
+      <a href="https://amritmahotsav.nic.in/blogdetail.htm?106" class="learn-more-btn">Learn More</a></div>
+    <div class="col">Column
+    <img src = "{% static 'images/art3.jpeg' %}" alt="My image" width="290" height="200"/>
+      <h2>SINGING</h2>
+      <p>Singing is the act of creating musical sounds with the voice. A person whose profession is singing is called a singer, artist or vocalist (in jazz and/or popular music). ...</p>
+      <a href="https://en.wikipedia.org/wiki/Music_of_India" class="learn-more-btn">Learn More</a></div>
+    <div class="col">Column
+    <img src = "{% static 'images/art4.jpg' %}" alt="My image" width="290" height="200"/>
+      <h2>POERTY</h2>
+      <p>Poetry , also called verse, is a form of literature that uses aesthetic and often rhythmic qualities of language − such as phonaesthetics, sound symbolism, and metre ....</p>
+      <a href="https://en.wikipedia.org/wiki/Indian_literature" class="learn-more-btn">Learn More</a></div>
+  </div>
+</div>
+{% endblock %}
+</body>
+</html>
